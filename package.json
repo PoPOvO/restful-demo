@@ -1,0 +1,11 @@
+{
+  "name": "restful-demo",
+  "version": "1.0.0",
+  "description": "Spring Boot+MyBatis构建的简单RESTful应用，使用了pagehelper、tk.mybatis、jaskson、lombok、MockMvc、Swagger等开发插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+</head>
+<body>
+    Hello Boy！
+</body>
+
+<script>
+    window.addEventListener('message', function(e) {
+        var data = e.data;
+        var origin = e.origin;
+        var source = e.source;
+
+        switch (data.method) {
+            // 获取LocalStorage项
+            case "get":
+                var res = localStorage.getItem(data.key);
+                source.postMessage(res, origin);
+                break;
+            // 设置LocalStorage项
+            case "set":
+                localStorage.setItem(data.key, JSON.stringify(data.value));
+                break;
+            // 删除LocalStorage项
+            case "remove":
+                localStorage.removeItem(data.key);
+                break;
+        }
+    }, false);
+
+    console.log("SSSSSS", localStorage);
+</script>
+</html>

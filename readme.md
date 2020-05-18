@@ -1,0 +1,1 @@
+Spring Boot+MyBatis构建的简单RESTful应用，使用了pagehelper、tk.mybatis、jaskson、lombok、MockMvc、Swagger等开发插件
